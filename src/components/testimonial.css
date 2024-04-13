@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body {
+  background-color: #cddee0f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.container-Block {
+  font-family: "Roboto", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 3%;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #2c3447;
+  padding: 30px;
+  box-sizing: border-box;
+  width: calc(33.33% - 20px); /* Adjust based on your grid */
+}
+
+@media only screen and (max-width: 768px) {
+  .container-Block {
+    width: calc(50% - 20px); /* Adjust based on your grid */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container-Block {
+    width: 100%;
+  }
+}
+
+h2,
+h4,
+blockquote {
+  margin: 0;
+}
+
+h2,
+h4 {
+  font-weight: 300;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+h4 {
+  color: #a6a6a6;
+}
+
+blockquote {
+  padding: 45px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+}
+
+blockquote:before {
+  font-family: "FontAwesome";
+  content: "\201C";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #a6a57a;
+}
+
+@media only screen and (max-width: 480px) {
+  .profile {
+    width: 100px;
+    height: 100px;
+  }
+}
